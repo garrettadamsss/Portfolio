@@ -3,10 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Green theme colors */
+  --green-light: #e6f4ea;
+  --green-dark: #0f2e1c;
+  --green-gradient: linear-gradient(135deg, #0f2e1c 0%, #1f4d2e 100%);
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-background: var(--green-light);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -14,13 +19,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--green-dark);
+    --foreground: #d1f7ce;
+
+    /* optional: more intense gradient for dark mode */
+    --green-gradient: linear-gradient(135deg, #0f2e1c 0%, #26734d 100%);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+
+  /* Optional: apply the gradient as background */
+  background-image: var(--green-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
