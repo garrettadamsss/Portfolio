@@ -1,5 +1,8 @@
 import Footer from "./footer";
 import Navbar from "./navbar";
+import AboutSection from "./component/about-section";
+import ProjectsSection from "./component/projects-section";
+import ContactSection from "./component/contact-section";
 
 console.log('here');
 export default function Home() {
@@ -44,64 +47,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="rounded-3xl border border-emerald-200/25 bg-emerald-950/30 p-8 backdrop-blur">
-          <h2 className="text-2xl font-semibold text-emerald-50">About</h2>
-          <p className="mt-4 max-w-3xl leading-7 text-emerald-50/90">
-            I enjoy turning ideas into polished products. My workflow emphasizes readable components, reusable patterns,
-            and measurable improvements to speed and usability.
-          </p>
-        </section>
+        <AboutSection />
 
-        <section id="projects" className="py-14">
-          <div className="flex items-end justify-between gap-4">
-            <h2 className="text-2xl font-semibold text-emerald-50">Featured Projects</h2>
-            <a href="#" className="text-sm font-medium text-emerald-200 hover:text-emerald-100">
-              View all
-            </a>
-          </div>
+        <ProjectsSection />
 
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
-            {[
-              {
-                title: "Project One",
-                description: "A full-stack app with authentication, dashboards, and API integrations.",
-              },
-              {
-                title: "Project Two",
-                description: "A fast landing page system with reusable components and analytics.",
-              },
-              {
-                title: "Project Three",
-                description: "A data-driven tool focused on clear charts and practical workflows.",
-              },
-            ].map((project) => (
-              <article
-                key={project.title}
-                className="rounded-2xl border border-emerald-200/20 bg-emerald-950/25 p-6 transition hover:-translate-y-1 hover:border-emerald-200/45"
-              >
-                <h3 className="text-lg font-semibold text-emerald-50">{project.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-emerald-100/85">{project.description}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section
-          id="contact"
-          className="rounded-3xl border border-emerald-200/25 bg-emerald-950/35 p-8 text-center backdrop-blur"
-        >
-          <h2 className="text-2xl font-semibold text-emerald-50">Let&apos;s Work Together</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-emerald-100/90">
-            Looking for someone to build or improve your next web project? Reach out and I can help shape the right
-            solution.
-          </p>
-          <a
-            href="mailto:garrett@example.com"
-            className="mt-6 inline-block rounded-full bg-emerald-200 px-6 py-2.5 text-sm font-semibold text-emerald-950 transition hover:bg-emerald-100"
-          >
-            garrett@example.com
-          </a>
-        </section>
+        <ContactSection />
       </main>
 
       <Footer />
