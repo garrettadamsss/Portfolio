@@ -9,11 +9,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-20 backdrop-blur">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-10">
-        <a
-          href="#home"
-          className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-100"
-        >
-          Garrett Adams
+        <a href="#home" aria-label="Go to home section">
+          <img src="/logo.png" alt="Logo" />
         </a>
 
         <ul className="hidden items-center gap-6 md:flex">
