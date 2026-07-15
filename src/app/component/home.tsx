@@ -77,7 +77,7 @@ export default function HomeSection() {
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
-              className="h-7 w-7"
+              className="h-6 w-6 translate-y-[2px]"
               aria-hidden="true"
             >
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
