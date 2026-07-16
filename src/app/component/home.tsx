@@ -4,7 +4,7 @@ export default function HomeSection() {
       <div className="space-y-6">
         <div className="h-64 w-64 overflow-hidden rounded-lg ">
           <img
-            src="/headshot2.jpg"
+            src="/headshot.jpeg"
             alt="Profile"
             className="h-full w-full object-cover"
           />
