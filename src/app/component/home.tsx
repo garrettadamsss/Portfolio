@@ -12,7 +12,9 @@ export default function HomeSection() {
       </div>
       <div className="space-y-3">
         <p className="text-6xl font-semibold text-emerald-50">Garrett Adams</p>
-        <p className="text-sm uppercase tracking-[0.2em] text-emerald-200/90 ml-1">Software Engineer</p>
+        <p className="text-sm uppercase tracking-[0.2em] text-emerald-200/90 ml-1">
+          Software Engineer
+        </p>
         <div className="flex items-center gap-4 text-emerald-100 ml-1 mt-4">
           <a
             href="https://github.com"
@@ -85,7 +87,7 @@ export default function HomeSection() {
               <path d="M12 11v6" />
               <path d="m9 14 3 3 3-3" />
             </svg>
-           </a>
+          </a>
         </div>
       </div>
     </section>
