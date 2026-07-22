@@ -12,7 +12,7 @@ export default function HomeSection() {
             priority
             quality={95}
             sizes="256px"
-            className="object-cover object-[center_30%]"
+            className="object-cover object-[center_40%]"
           />
         </div>
       </div>

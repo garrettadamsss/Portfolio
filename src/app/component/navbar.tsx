@@ -8,7 +8,7 @@ const navLinks = [
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-20 backdrop-blur">
-      <nav className="flex w-full items-center justify-between px-6 py-4 md:px-10">
+      <nav className="flex w-full items-center justify-between px-6 py-4 md:px-8">
         <a href="#home" aria-label="Go to home section">
           <img src="/logo.png" alt="Logo" className="h-12 w-auto md:h-15" />
         </a>
