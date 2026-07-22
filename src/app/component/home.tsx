@@ -1,12 +1,18 @@
+import Image from "next/image";
+
 export default function HomeSection() {
   return (
     <section id="home" className="flex gap-5 py-14 items-center justify-center">
       <div className="space-y-6">
-        <div className="h-64 w-64 overflow-hidden rounded-lg ">
-          <img
-            src="/headshot.jpeg"
+        <div className="relative h-64 w-64 overflow-hidden rounded-3xl">
+          <Image
+            src="/headshot6.JPEG"
             alt="Profile"
-            className="h-full w-full object-cover"
+            fill
+            priority
+            quality={95}
+            sizes="256px"
+            className="object-cover object-[center_30%]"
           />
         </div>
       </div>
@@ -60,7 +66,7 @@ export default function HomeSection() {
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
-              className="h-7 w-7 translate-y-[2px]"
+              className="h-7 w-7 translate-y-[3px]"
               aria-hidden="true"
             >
               <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
