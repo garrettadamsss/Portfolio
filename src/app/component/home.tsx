@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function HomeSection() {
   return (
-    <section id="home" className="flex gap-5 py-14 items-center justify-center">
+    <section id="home" className="flex gap-10 py-20 items-center justify-center">
       <div className="space-y-6">
-        <div className="relative h-64 w-64 overflow-hidden rounded-3xl">
+        <div className="relative h-64 w-64 overflow-hidden rounded-3xl border-2 border-emerald-200/25 ring-3 ring-emerald-400/10">
           <Image
             src="/headshot6.JPEG"
             alt="Profile"
@@ -16,12 +16,12 @@ export default function HomeSection() {
           />
         </div>
       </div>
-      <div className="space-y-3">
+      <div className="space-y-4">
         <p className="text-6xl font-semibold text-emerald-50">Garrett Adams</p>
         <p className="text-sm uppercase tracking-[0.2em] text-emerald-200/90 ml-1">
           Software Engineer
         </p>
-        <div className="flex items-center gap-4 text-emerald-100 ml-1 mt-4">
+        <div className="flex items-center gap-4 text-emerald-100 ml-1">
           <a
             href="https://github.com"
             target="_blank"
@@ -47,12 +47,12 @@ export default function HomeSection() {
             className="transition hover:text-white"
           >
             <svg
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
               fill="currentColor"
-              className="h-7 w-7"
+              className="h-6 w-6 translate-y-[1px]"
               aria-hidden="true"
             >
-              <path d="M4.98 3.5A2.5 2.5 0 0 0 2.5 6a2.5 2.5 0 0 0 2.48 2.5A2.5 2.5 0 0 0 7.5 6 2.5 2.5 0 0 0 4.98 3.5ZM2.98 9h4V21h-4V9Zm7 0h3.83v1.71h.05c.53-1 1.84-2.06 3.79-2.06 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.44c0-1.3-.02-2.96-1.8-2.96-1.8 0-2.08 1.41-2.08 2.87V21h-4V9Z" />
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.473 0 16 .513 16 1.146v13.708c0 .633-.527 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.433.08-.587.173-.433.568-.881 1.233-.881.87 0 1.216.665 1.216 1.639v3.864h2.401V9.252c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.679 0 7.225 0 7.225h2.4z" />
             </svg>
           </a>
 
