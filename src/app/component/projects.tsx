@@ -18,7 +18,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-14">
+    <section id="projects" className="my-15">
       <div className="flex items-end justify-between gap-4">
         <h2 className="text-2xl font-semibold text-emerald-50">
           Featured Projects

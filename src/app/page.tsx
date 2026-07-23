@@ -2,8 +2,8 @@ import Footer from "./component/footer";
 import Navbar from "./component/navbar";
 import AboutSection from "./component/about";
 import ProjectsSection from "./component/projects";
-import ContactSection from "./component/contact";
 import HomeSection from "./component/home";
+import ExperienceSection from "./component/experience";
 
 export default function Home() {
   return (
@@ -12,8 +12,8 @@ export default function Home() {
         <Navbar />
         <HomeSection />
         <AboutSection />
+        <ExperienceSection />
         <ProjectsSection />
-        <ContactSection />
       </main>
       <Footer />
     </div>
