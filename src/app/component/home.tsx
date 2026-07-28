@@ -30,6 +30,7 @@ export default function HomeSection() {
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
+            title="Github"
             className="transition hover:text-white"
           >
             <svg viewBox="0 0 48 48" fill="currentColor" className="h-7 w-7">
@@ -42,6 +43,7 @@ export default function HomeSection() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
+            title="LinkedIn"
             className="transition hover:text-white"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="h-7 w-7">
@@ -52,20 +54,21 @@ export default function HomeSection() {
           <a
             href="mailto:garrettadamssss@gmail.com"
             aria-label="Email"
+            title="Send me an email"
             className="transition hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7"
-              viewBox="0 0 24 24"
+              viewBox="2 2 20 20"
               fill="none"
               stroke="currentColor"
             >
               <path
                 d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <rect
                 x="3"
@@ -73,17 +76,18 @@ export default function HomeSection() {
                 width="18"
                 height="14"
                 rx="2"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
               />
             </svg>
           </a>
 
           <a
-            href="/resume.pdf"
+            href="/GarrettAdams_Resume.pdf"
             download
             aria-label="Download resume"
             className="transition hover:text-white"
+            title="Resume"
           >
             <svg
               viewBox="0 0 24 24"
