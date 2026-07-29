@@ -1,16 +1,16 @@
 const projects = [
   {
-    title: "Project One",
+    title: "Trading Bot(WIP)",
     description:
       "A full-stack app with authentication, dashboards, and API integrations.",
   },
   {
-    title: "Project Two",
+    title: "LeetCode Discord Bot",
     description:
       "A fast landing page system with reusable components and analytics.",
   },
   {
-    title: "Project Three",
+    title: "",
     description:
       "A data-driven tool focused on clear charts and practical workflows.",
   },
