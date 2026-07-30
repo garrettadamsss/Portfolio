@@ -17,7 +17,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-base text-emerald-100/90 transition hover:text-white"
+                className="nav-link"
               >
                 {link.label}
               </a>
