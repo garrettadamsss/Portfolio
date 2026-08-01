@@ -26,31 +26,31 @@ export default function ExperienceSection() {
   return (
     <section id="experience">
       <div className="rounded-3xl border border-emerald-200/25 bg-emerald-950/30 p-8 backdrop-blur mt-15">
-          <h3 className="text-xl font-semibold text-emerald-100">Experience</h3>
+        <h3 className="text-xl font-semibold text-emerald-100">Experience</h3>
 
-          <ul className="relative mt-6 space-y-8 pl-8 before:absolute before:bottom-1 before:left-2.5 before:top-1 before:w-px before:bg-emerald-300/40">
-            {experiences.map((experience) => (
-              <li
-                key={`${experience.role}-${experience.company}`}
-                className="relative"
-              >
-                <span className="absolute -left-6 top-3 h-px w-4 bg-emerald-300/50" />
-                <span className="absolute -left-[1.625rem] top-2 h-2 w-2 rounded-full bg-emerald-200 ring-4 ring-emerald-950/80" />
+        <ul className="relative mt-6 space-y-8 pl-8 before:absolute before:bottom-1 before:left-2.5 before:top-1 before:w-px before:bg-emerald-300/40">
+          {experiences.map((experience) => (
+            <li
+              key={`${experience.role}-${experience.company}`}
+              className="relative"
+            >
+              <span className="absolute -left-6 top-3 h-px w-4 bg-emerald-300/50" />
+              <span className="absolute -left-[1.625rem] top-2 h-2 w-2 rounded-full bg-emerald-200 ring-4 ring-emerald-950/80" />
 
-                <p className="text-sm font-medium text-emerald-200/90">
-                  {experience.period}
-                </p>
-                <h4 className="mt-1 text-lg font-semibold text-emerald-50">
-                  {experience.role}
-                </h4>
-                <p className="text-emerald-200/90">{experience.company}</p>
-                <p className="mt-2 leading-7 text-emerald-50/90">
-                  {experience.summary}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
+              <p className="text-sm font-medium text-emerald-200/90">
+                {experience.period}
+              </p>
+              <h4 className="mt-1 text-lg font-semibold text-emerald-50">
+                {experience.role}
+              </h4>
+              <p className="text-emerald-200/90">{experience.company}</p>
+              <p className="mt-2 leading-7 text-emerald-50/90">
+                {experience.summary}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

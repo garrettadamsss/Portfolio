@@ -15,10 +15,7 @@ export default function Navbar() {
         <ul className="ml-auto hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="nav-link"
-              >
+              <a href={link.href} className="nav-link">
                 {link.label}
               </a>
             </li>
