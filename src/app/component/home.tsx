@@ -4,7 +4,7 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="flex gap-10 py-20 items-center justify-center"
+      className="flex gap-10 py-15 items-center justify-center"
     >
       <div className="space-y-6">
         <div className="relative h-64 w-64 overflow-hidden rounded-3xl border-2 border-emerald-200/25 ring-3 ring-emerald-400/10">
@@ -24,7 +24,7 @@ export default function HomeSection() {
         <p className="text-sm uppercase tracking-[0.2em] text-emerald-200/90 ml-1">
           Software Engineer
         </p>
-        <div className="flex items-center gap-4 text-emerald-100 ml-1">
+        <div className="flex items-center gap-5 text-emerald-100 ml-1">
           <a
             href="https://github.com/garrettadamsss"
             target="_blank"

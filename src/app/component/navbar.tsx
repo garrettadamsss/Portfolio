@@ -12,7 +12,7 @@ export default function Navbar() {
           <img src="/logo.png" alt="Logo" className="h-14 w-auto md:h-16" />
         </a>
 
-        <ul className="ml-auto hidden items-center gap-6 md:flex">
+        <ul className="ml-auto hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a href={link.href} className="nav-link">

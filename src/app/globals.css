@@ -40,7 +40,7 @@ body {
 }
 
 @utility nav-link {
-  @apply relative inline-block pb-1 text-base text-emerald-100/90 transition hover:text-white;
+  @apply relative inline-block pb-1 text-lg text-emerald-100/90 transition hover:text-white;
   @apply after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full;
   @apply after:origin-left after:scale-x-0 after:bg-emerald-200;
   @apply after:transition-transform after:duration-300 after:content-[''];
