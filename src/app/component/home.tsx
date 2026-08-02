@@ -9,7 +9,7 @@ export default function HomeSection() {
       <div className="space-y-6">
         <div className="relative h-64 w-64 overflow-hidden rounded-3xl border-2 border-emerald-200/25 ring-3 ring-emerald-400/10">
           <Image
-            src="/headshot6.JPEG"
+            src="/about/headshot.JPEG"
             alt="Profile"
             fill
             priority
