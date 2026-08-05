@@ -43,7 +43,7 @@ export default function AboutSection() {
           type="button"
           onClick={showNextImage}
           aria-label="Show next photo"
-          className="flex cursor-pointer flex-row-reverse [--photo-w:16rem] [&>*+*]:-mr-[calc(var(--photo-w)*0.75)]"
+          className="flex cursor-pointer flex-row-reverse [--photo-w:18rem] [&>*+*]:-mr-[calc(var(--photo-w)*0.90)]"
         >
           {Array.from({ length: STACK_COUNT }, (_, index) => {
             const depthFromFront = STACK_COUNT - 1 - index;
@@ -53,13 +53,15 @@ export default function AboutSection() {
             return (
               <div
                 key={index}
-                className="relative h-60 w-[var(--photo-w)] shrink-0 overflow-hidden rounded-2xl border-2 border-emerald-200/25 bg-emerald-950/30 shadow-lg ring-2 ring-emerald-400/10 transition-transform hover:scale-[1.05]"
+                className="relative h-80 w-[var(--photo-w)] shrink-0 overflow-hidden rounded-2xl border-2 border-emerald-200/25 bg-emerald-950/30 shadow-lg ring-2 ring-emerald-400/10 transition-transform hover:scale-[1.05]"
                 style={{ zIndex: index + 1 }}
               >
                 <Image
                   src={DECK_IMAGES[imageIndex]}
                   alt={depthFromFront === 0 ? "Photo stack" : ""}
                   fill
+                  quality={95}
+                  sizes="(min-width: 1024px) 18rem, (min-width: 768px) 40vw, 80vw"
                   className="object-cover object-[center_40%]"
                 />
               </div>
