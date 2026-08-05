@@ -7,14 +7,12 @@ export default function HomeSection() {
       className="flex gap-10 py-15 items-center justify-center"
     >
       <div className="space-y-6">
-        <div className="relative h-64 w-64 overflow-hidden rounded-3xl border-2 border-emerald-200/25 ring-3 ring-emerald-400/10">
+        <div className="relative h-64 w-64 overflow-hidden rounded-3xl">
           <Image
             src="/about/headshot.JPEG"
             alt="Profile"
             fill
-            priority
             quality={95}
-            sizes="256px"
             className="object-cover object-[center_40%]"
           />
         </div>

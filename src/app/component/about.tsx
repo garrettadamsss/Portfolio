@@ -53,7 +53,7 @@ export default function AboutSection() {
             return (
               <div
                 key={index}
-                className="relative h-80 w-[var(--photo-w)] shrink-0 overflow-hidden rounded-2xl border-2 border-emerald-200/25 bg-emerald-950/30 shadow-lg ring-2 ring-emerald-400/10 transition-transform hover:scale-[1.05]"
+                className="relative h-80 w-[var(--photo-w)] shrink-0 overflow-hidden rounded-2xl transition-transform hover:scale-[1.05]"
                 style={{ zIndex: index + 1 }}
               >
                 <Image
