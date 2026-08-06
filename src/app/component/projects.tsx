@@ -1,20 +1,41 @@
 const projects = [
   {
-    title: "Trading Bot(WIP)",
+    title: "Distiller (WIP)",
     description:
-      "A full-stack app with authentication, dashboards, and API integrations.",
+      "Web app that illustrates current sentiment and important data points of a given stock",
+    skills: ["AI MCP Agents"],
   },
   {
     title: "LeetCode Discord Bot",
     description:
-      "A fast landing page system with reusable components and analytics.",
+      "Discord Bot that generates random free problems based on selected difficulty.",
+    skills: ["Javascript", "NodeJS", "Web Scraping", "APIs"],
   },
   {
-    title: "",
+    title: "Northrop Grumman Collaboration Project - UAV",
+    description: "",
+    skills: ["Python", "Robotics", "Team Managment"],
+  },
+  {
+    title: "UNET Image Segmentation",
     description:
-      "A data-driven tool focused on clear charts and practical workflows.",
+      "A collection of different image segmentation models with supporting Python code for image processing",
+    skills: [
+      "Machine Learning",
+      "Python",
+      "Jupyter Notebook",
+      "Pytorch",
+      "Keras",
+    ],
+  },
+  {
+    title: "My First Website",
+    description:
+      "Do not judge! This is the first website I created. Its an static website for my father's business and still up today!",
+    skills: ["HTML", "CSS", "Javascript", "PHP"],
   },
 ];
+
 
 export default function ProjectsSection() {
   return (
@@ -43,6 +64,16 @@ export default function ProjectsSection() {
             <p className="mt-2 text-sm leading-6 text-emerald-100/85">
               {project.description}
             </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {project.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-emerald-200/25 bg-emerald-800/40 px-3 py-0.5 text-xs font-medium text-emerald-100"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </article>
         ))}
       </div>
