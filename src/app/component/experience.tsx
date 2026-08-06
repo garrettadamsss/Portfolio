@@ -6,6 +6,7 @@ export default function ExperienceSection() {
       period: "June 2023 - Present",
       summary:
         'Co-developed a front-end analytics library called "Nebula" that was highly performant and could be used across any Pluto app. Developed front-end in a new project called "Lite" for developing a highly performant Pluto and Paramount+ converged app.',
+      skills: ["Typescript", "Svelte", "React", "Analytics", "CI/CD"],
     },
     {
       role: "Team Lead",
@@ -13,6 +14,7 @@ export default function ExperienceSection() {
       period: "Aug 2022 -  May 2023",
       summary:
         "Led a team of fellow students to designing and integrating autonomous flight system with real-time fire detection. Integrated Pixhawk, Jetson Nano, and onboard camera with the aircraft's flight system. Ran several succesful test flights, concluding with a live demo.",
+      skills: ["Team Managment", "Robotics", "Python", "REST"],
     },
     {
       role: "Researcher",
@@ -20,6 +22,13 @@ export default function ExperienceSection() {
       period: "May 2022 - Aug 2022",
       summary:
         "Created a machine learning image segmentation model that identified shoreline features from UAS photogrammetry. The generated maks were used in Metashape to create more accurate 3D models.",
+      skills: [
+        "Machine Learning",
+        "Python",
+        "Jupyter Notebook",
+        "Pytorch",
+        "Keras",
+      ],
     },
   ];
 
@@ -47,6 +56,16 @@ export default function ExperienceSection() {
               <p className="mt-2 leading-7 text-emerald-50/90">
                 {experience.summary}
               </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {experience.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-emerald-200/25 bg-emerald-800/40 px-3 py-0.5 text-xs font-medium text-emerald-100"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </li>
           ))}
         </ul>

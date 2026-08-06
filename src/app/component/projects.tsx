@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Northrop Grumman Collaboration Project - UAV",
     description: "",
-    skills: ["Python", "Robotics", "Team Managment"],
+    skills: ["Python", "Robotics"],
   },
   {
     title: "UNET Image Segmentation",
