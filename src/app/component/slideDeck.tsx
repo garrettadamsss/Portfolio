@@ -24,7 +24,7 @@ export default function SlideDeck() {
       type="button"
       onClick={showNextImage}
       aria-label="Show next photo"
-      className="flex cursor-pointer flex-row-reverse [--photo-w:18rem] [&>*+*]:-mr-[calc(var(--photo-w)*0.90)]"
+      className="flex cursor-pointer flex-row-reverse [--photo-w:18rem] [&>*+*]:-mr-[calc(var(--photo-w)*0.80)]"
     >
       {Array.from({ length: STACK_COUNT }, (_, index) => {
         const depthFromFront = STACK_COUNT - 1 - index;

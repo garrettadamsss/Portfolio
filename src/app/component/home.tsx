@@ -1,28 +1,44 @@
-import Image from "next/image";
-
 export default function HomeSection() {
   return (
     <section
       id="home"
-      className="flex gap-10 py-15 items-center justify-center"
+      className="py-20 md:py-28 lg:py-32"
     >
-      <div className="space-y-6">
-        <div className="relative h-64 w-64 overflow-hidden rounded-3xl">
-          <Image
-            src="/about/headshot.JPEG"
-            alt="Profile"
-            fill
-            quality={95}
-            className="object-cover object-[center_40%]"
-          />
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-10 rounded-3xl border border-emerald-300/20 bg-emerald-950/25 px-6 py-10 shadow-[0_24px_80px_rgba(2,18,12,0.35)] backdrop-blur-sm md:px-10 md:py-14">
+        <div className="space-y-6">
+          <p className="inline-flex rounded-full border border-emerald-200/25 bg-emerald-800/40 px-4 py-1 text-xs font-medium uppercase tracking-[0.18em] text-emerald-100">
+            Portfolio 2026
+          </p>
+          <div className="space-y-4">
+            <h1 className="text-5xl font-semibold leading-tight text-emerald-50 md:text-7xl">
+              Garrett Adams
+            </h1>
+            <p className="text-sm uppercase tracking-[0.28em] text-emerald-200/90">
+              Software Engineer
+            </p>
+          </div>
+          <p className="max-w-3xl text-base leading-8 text-emerald-100/90 md:text-lg">
+            I build reliable, user-focused software with a strong foundation in
+            full-stack engineering. Explore my projects and experience to see
+            what I have been building.
+          </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href="#projects"
+              className="rounded-xl bg-emerald-300 px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-emerald-950 transition hover:bg-emerald-200"
+            >
+              View Projects
+            </a>
+            <a
+              href="#about"
+              className="rounded-xl border border-emerald-200/45 px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-emerald-100 transition hover:border-emerald-100 hover:text-white"
+            >
+              About Me
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="space-y-4">
-        <p className="text-6xl font-semibold text-emerald-50">Garrett Adams</p>
-        <p className="text-sm uppercase tracking-[0.2em] text-emerald-200/90 ml-1">
-          Software Engineer
-        </p>
-        <div className="flex items-center gap-5 text-emerald-100 ml-1">
+
+        <div className="flex items-center gap-5 text-emerald-100">
           <a
             href="https://github.com/garrettadamsss"
             target="_blank"
