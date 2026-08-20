@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="flex items-center gap-8 py-20 md:py-28 lg:py-32"
+      className="flex items-stretch gap-8 py-20 md:py-28 lg:py-32"
     >
       <div className="w-1/2 rounded-3xl border border-emerald-200/25 bg-emerald-950/30 p-8 backdrop-blur">
         <h2 className="text-2xl font-semibold text-emerald-50">About</h2>
@@ -29,7 +29,7 @@ export default function AboutSection() {
         </p>
       </div>
 
-      <div className="flex w-1/2 justify-center">
+      <div className="flex w-1/2 items-stretch justify-end">
         <SlideDeck />
       </div>
     </section>
