@@ -56,7 +56,7 @@ export default function ProjectsSection() {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="rounded-2xl border border-emerald-200/20 bg-emerald-950/25 p-6 transition hover:-translate-y-1 hover:border-emerald-200/45"
+            className="rounded-2xl bg-emerald-950/25 p-6 transition hover:-translate-y-1 hover:border-emerald-200/45"
           >
             <h3 className="text-lg font-semibold text-emerald-50">
               {project.title}

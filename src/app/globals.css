@@ -7,7 +7,7 @@
   /* Green theme colors */
   --green-light: #e6f4ea;
   --green-dark: #0f2e1c;
-  --green-gradient: linear-gradient(135deg, #0f2e1c 0%, #1f4d2e 100%);
+  --green-gradient: linear-gradient(135deg, #174f2e 0%, #26734d 100%);
 }
 
 @theme inline {
@@ -17,18 +17,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--green-dark);
-    --foreground: #d1f7ce;
-
-    /* optional: more intense gradient for dark mode */
-    --green-gradient: linear-gradient(135deg, #0f2e1c 0%, #26734d 100%);
-  }
-}
-
 body {
-  background: var(--background);
+  background: var(--green-dark);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 
@@ -37,6 +27,28 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+@keyframes deck-countdown {
+  from {
+    stroke-dashoffset: 100;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes deck-slide-in {
+  from {
+    opacity: 0;
+    transform: translate3d(1.5rem, 0, 0) scale(1.02);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 @utility nav-link {

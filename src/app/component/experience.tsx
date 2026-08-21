@@ -34,7 +34,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience">
-      <div className="rounded-3xl border border-emerald-200/25 bg-emerald-950/30 p-8 backdrop-blur mt-15">
+      <div className="rounded-3xl bg-emerald-950/30 p-8 backdrop-blur mt-15">
         <h3 className="text-xl font-semibold text-emerald-100">Experience</h3>
 
         <ul className="relative mt-6 space-y-8 pl-8 before:absolute before:bottom-1 before:left-2.5 before:top-1 before:w-px before:bg-emerald-300/40">
