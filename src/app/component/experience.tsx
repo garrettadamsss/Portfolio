@@ -33,7 +33,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section id="experience">
+    <section id="experience" className="section-block">
       <div className="glass-card mt-15 p-8">
         <h3 className="section-title">Experience</h3>
 

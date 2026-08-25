@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="max-w-xl px-10 py-8 text-sm">
+    <footer className="max-w-xl ps-20 py-8 text-sm ">
       <p>
         Loosely designed in{" "}
         <a

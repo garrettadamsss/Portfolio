@@ -3,9 +3,6 @@ export default function HomeSection() {
     <section id="home" className="section-block">
       <div className="glass-card mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-10 md:px-10 md:py-14">
         <div className="space-y-6">
-          <p className="inline-flex rounded-full border border-emerald-200/25 bg-emerald-800/40 px-4 py-1 text-xs font-medium uppercase tracking-[0.18em] text-emerald-100">
-            Portfolio 2026
-          </p>
           <div className="space-y-4">
             <h1 className="text-5xl font-semibold leading-tight text-emerald-50 md:text-7xl">
               Garrett Adams
@@ -14,9 +11,8 @@ export default function HomeSection() {
               Software Engineer
             </p>
           </div>
-          <p className="max-w-3xl text-base leading-8 text-emerald-100/90 md:text-lg">
-            I build reliable, user-focused software with a strong foundation in
-            full-stack engineering. Explore my projects and experience to see
+          <p className="max-w-2xl text-base leading-8 text-emerald-100/90 md:text-lg">
+            Welcome to my portfolio! Explore my projects and experience to see
             what I have been building.
           </p>
           <div className="flex flex-wrap items-center gap-4">
