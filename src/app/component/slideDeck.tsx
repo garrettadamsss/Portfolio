@@ -36,22 +36,28 @@ export default function SlideDeck() {
   };
 
   return (
-    <div className="relative h-full w-full min-h-[24rem] max-w-[34rem] overflow-hidden rounded-3xl bg-black shadow-2xl shadow-black/30">
-      <div
-        key={activeIndex}
-        className="absolute inset-0 will-change-transform"
-        style={{ animation: "deck-slide-in 700ms ease-out" }}
-      >
-        <Image
-          src={DECK_IMAGES[activeIndex]}
-          alt={`Selected photo ${activeIndex + 1}`}
-          fill
-          quality={95}
-          sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 32rem, (min-width: 768px) 45vw, 92vw"
-          className="object-cover object-[center_50%]"
-          priority
-        />
-      </div>
+    <div className="relative h-full w-full min-h-[24rem] max-w-[34rem] overflow-hidden rounded-3xl">
+      {DECK_IMAGES.map((imageSrc, index) => {
+        const isActive = index === activeIndex;
+
+        return (
+          <div
+            key={imageSrc}
+            className={`absolute inset-0 transition-opacity duration-700 ease-out ${
+              isActive ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={imageSrc}
+              alt={`Selected photo ${index + 1}`}
+              fill
+              quality={95}
+              sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 32rem, (min-width: 768px) 45vw, 92vw"
+              className="object-cover object-[center_50%]"
+            />
+          </div>
+        );
+      })}
 
       <button
         type="button"
