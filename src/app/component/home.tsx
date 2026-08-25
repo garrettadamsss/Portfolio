@@ -1,10 +1,7 @@
 export default function HomeSection() {
   return (
-    <section
-      id="home"
-      className="py-20 md:py-28 lg:py-32"
-    >
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-10 rounded-3xl bg-emerald-950/30 px-6 py-10 md:px-10 md:py-14">
+    <section id="home" className="section-block">
+      <div className="glass-card mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-10 md:px-10 md:py-14">
         <div className="space-y-6">
           <p className="inline-flex rounded-full border border-emerald-200/25 bg-emerald-800/40 px-4 py-1 text-xs font-medium uppercase tracking-[0.18em] text-emerald-100">
             Portfolio 2026

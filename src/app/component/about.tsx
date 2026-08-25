@@ -6,10 +6,10 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="flex items-stretch gap-8 py-20 md:py-28 lg:py-32"
+      className="section-block flex items-stretch gap-8"
     >
-      <div className="w-1/2 rounded-3xl  bg-emerald-950/30 p-8 backdrop-blur">
-        <h2 className="text-2xl font-semibold text-emerald-50">About</h2>
+      <div className="glass-card w-1/2 p-8">
+        <h2 className="section-title">About</h2>
         <p className="mt-4 leading-7 text-emerald-50/90">
           Hello! I'm Garrett, a software engineer with a passion for creating
           simple, performant systems and devling into new technologies.

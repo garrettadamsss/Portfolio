@@ -41,7 +41,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="my-15">
       <div className="flex items-end justify-between gap-4">
-        <h2 className="text-2xl font-semibold text-emerald-50">
+        <h2 className="section-title">
           Featured Projects
         </h2>
         <a
@@ -56,7 +56,7 @@ export default function ProjectsSection() {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="rounded-2xl bg-emerald-950/25 p-6 transition hover:-translate-y-1 hover:border-emerald-200/45"
+            className="glass-card rounded-2xl p-6 transition hover:-translate-y-1 hover:border-emerald-200/45"
           >
             <h3 className="text-lg font-semibold text-emerald-50">
               {project.title}
@@ -66,10 +66,7 @@ export default function ProjectsSection() {
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {project.skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-emerald-200/25 bg-emerald-800/40 px-3 py-0.5 text-xs font-medium text-emerald-100"
-                >
+                <span key={skill} className="skill-chip">
                   {skill}
                 </span>
               ))}

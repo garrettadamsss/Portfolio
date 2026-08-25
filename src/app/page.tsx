@@ -8,7 +8,7 @@ import ExperienceSection from "./component/experience";
 export default function Main() {
   return (
     <div className="min-h-screen text-foreground">
-      <main className="mx-auto max-w-screen-2xl px-6 py-12">
+      <main className="section-shell">
         <Navbar />
         <HomeSection />
         <AboutSection />
