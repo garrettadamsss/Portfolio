@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
@@ -9,7 +11,12 @@ export default function Navbar() {
     <header>
       <nav className="flex h-15 items-center justify-between my-10 ">
         <a href="#home" aria-label="Go to home section">
-          <img src="/logo.png" alt="Logo" className="h-14 w-auto md:h-16" />
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            className="h-14 w-auto md:h-16"
+            quality={95}
+          />
         </a>
 
         <ul className="ml-auto hidden items-center gap-8 md:flex">

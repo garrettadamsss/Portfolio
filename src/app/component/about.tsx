@@ -9,9 +9,9 @@ export default function AboutSection() {
       className="section-block flex items-stretch gap-8"
     >
       <div className="glass-card w-1/2 p-8">
-        <h2 className="section-title">About</h2>
+        <h2 className="section-title">About</h2>l
         <p className="mt-4 leading-7 text-emerald-50/90">
-          Hello! I'm Garrett, a software engineer with a passion for creating
+          Hello! I&apos;m Garrett, a software engineer with a passion for creating
           simple, performant systems and devling into new technologies.
         </p>
 
@@ -28,7 +28,7 @@ export default function AboutSection() {
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
               My current focus is on expanding my backend expertise in order to
-              claim the <span className="italic">"Full Stack"</span> title.
+              claim the <span className="italic">&quot;Full Stack&quot;</span> title.
             </p>
           </div>
 
@@ -43,10 +43,10 @@ export default function AboutSection() {
               </span>
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
-              At <span className="font-semibold">Paramount</span>, I'm building{" "}
+              At <span className="font-semibold">Paramount</span>, I&apos;m building 
               <span className="italic">Lite</span>, a high-performance frontend
-              app targeting low-end devices. I am currently converging{" "}
-              <span className="font-semibold">PlutoTV</span> and{" "}
+              app targeting low-end devices. I am currently converging 
+              <span className="font-semibold">PlutoTV</span> and 
               <span className="font-semibold">Paramount+</span> into a single,
               shared app.
             </p>
