@@ -1,7 +1,7 @@
 export default function HomeSection() {
   return (
     <section id="home" className="section-block">
-      <div className="glass-card mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-10 md:px-10 md:py-14">
+      <div className="glass-card flex w-full  flex-col gap-10 px-6 py-10 md:px-10 md:py-14">
         <div className="space-y-6">
           <div className="space-y-4">
             <h1 className="text-5xl font-semibold leading-tight text-emerald-50 md:text-7xl">
@@ -24,7 +24,7 @@ export default function HomeSection() {
             </a>
             <a
               href="#about"
-            className="rounded-xl border border-emerald-200/45 px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-emerald-100 transition hover:border-emerald-100 hover:text-white"
+              className="rounded-xl border border-emerald-200/45 px-5 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-emerald-100 transition hover:border-emerald-100 hover:text-white"
             >
               About Me
             </a>

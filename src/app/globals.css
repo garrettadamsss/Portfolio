@@ -47,9 +47,8 @@ body {
   @apply hover:after:scale-x-100;
 }
 
-
 @utility section-block {
-  @apply py-10 md:py-15 lg:py-20;
+  @apply py-5 md:py-10 lg:py-15;
 }
 
 @utility glass-card {

@@ -12,9 +12,11 @@ export default function Navbar() {
       <nav className="flex h-15 items-center justify-between my-10 ">
         <a href="#home" aria-label="Go to home section">
           <Image
-            src="/logo.png"
+            src={"/logo.png"}
             alt="Logo"
             className="h-14 w-auto md:h-16"
+            width={56}
+            height={56}
             quality={95}
           />
         </a>

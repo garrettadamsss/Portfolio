@@ -36,14 +36,11 @@ const projects = [
   },
 ];
 
-
 export default function ProjectsSection() {
   return (
     <section id="projects" className="my-15">
       <div className="flex items-end justify-between gap-4">
-        <h2 className="section-title">
-          Featured Projects
-        </h2>
+        <h2 className="section-title">Featured Projects</h2>
         <a
           href="#"
           className="text-sm font-medium text-emerald-200 hover:text-emerald-100"
@@ -56,7 +53,7 @@ export default function ProjectsSection() {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="glass-card rounded-2xl p-6 transition hover:-translate-y-1 hover:border-emerald-200/45"
+            className="glass-card rounded-2xl p-6 transition hover:-translate-y-1 hover:border-emerald-200/75"
           >
             <h3 className="text-lg font-semibold text-emerald-50">
               {project.title}

@@ -4,17 +4,13 @@ import SlideDeck from "./slideDeck";
 
 export default function AboutSection() {
   return (
-    <section
-      id="about"
-      className="section-block flex items-stretch gap-8"
-    >
+    <section id="about" className="section-block flex items-stretch gap-8">
       <div className="glass-card w-1/2 p-8">
         <h2 className="section-title">About</h2>l
         <p className="mt-4 leading-7 text-emerald-50/90">
-          Hello! I&apos;m Garrett, a software engineer with a passion for creating
-          simple, performant systems and devling into new technologies.
+          Hello! I&apos;m Garrett, a software engineer with a passion for
+          creating simple, performant systems and devling into new technologies.
         </p>
-
         <div className="mt-6 space-y-4">
           <div className="border-b border-emerald-200/10 pb-4 last:border-b-0 last:pb-0">
             <h3 className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-300/95">
@@ -28,7 +24,8 @@ export default function AboutSection() {
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
               My current focus is on expanding my backend expertise in order to
-              claim the <span className="italic">&quot;Full Stack&quot;</span> title.
+              claim the <span className="italic">&quot;Full Stack&quot;</span>{" "}
+              title.
             </p>
           </div>
 
@@ -43,10 +40,11 @@ export default function AboutSection() {
               </span>
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
-              At <span className="font-semibold">Paramount</span>, I&apos;m building 
+              At <span className="font-semibold">Paramount</span>, I&apos;m
+              building
               <span className="italic">Lite</span>, a high-performance frontend
-              app targeting low-end devices. I am currently converging 
-              <span className="font-semibold">PlutoTV</span> and 
+              app targeting low-end devices. I am currently converging
+              <span className="font-semibold">PlutoTV</span> and
               <span className="font-semibold">Paramount+</span> into a single,
               shared app.
             </p>

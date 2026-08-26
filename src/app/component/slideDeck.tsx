@@ -62,9 +62,7 @@ export default function SlideDeck() {
                   aria-label={`Show photo ${index + 1}`}
                   aria-pressed={isActive}
                   className={`relative h-14 w-14 transition ${
-                    isActive
-                      ? "scale-110"
-                      : "opacity-80 hover:opacity-100"
+                    isActive ? "scale-110" : "opacity-80 hover:opacity-100"
                   }`}
                 >
                   <Image
@@ -75,28 +73,6 @@ export default function SlideDeck() {
                     sizes="56px"
                     className="object-cover rounded-lg"
                   />
-                  {isActive ? (
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 56 56"
-                      className="absolute inset-0 h-full w-full"
-                    >
-                      <rect
-                        x="1"
-                        y="1"
-                        width="54"
-                        height="54"
-                        rx="7"
-                        fill="none"
-                        stroke="rgba(236, 253, 245, 0.95)"
-                        strokeWidth="3"
-                        strokeDasharray="100"
-                        strokeDashoffset="100"
-                        pathLength="100"
-                        style={{ animation: "deck-countdown 5s linear" }}
-                      />
-                    </svg>
-                  ) : null}
                 </button>
               </li>
             );
