@@ -36,7 +36,7 @@ export default function SlideDeck() {
   };
 
   return (
-    <div className="relative h-full w-full min-h-[24rem] max-w-[34rem] overflow-hidden rounded-3xl">
+    <div className="relative h-full w-full min-h-[24rem] max-w-[34rem] overflow-hidden rounded-3xl border border-white/20">
       {DECK_IMAGES.map((imageSrc, index) => {
         const isActive = index === activeIndex;
 
@@ -147,7 +147,7 @@ export default function SlideDeck() {
                         strokeDasharray="100"
                         strokeDashoffset="100"
                         pathLength="100"
-                        style={{ animation: "deck-countdown 5s linear backwards" }}
+                        style={{ animation: "deck-countdown 5s linear" }}
                       />
                     </svg>
                   ) : null}

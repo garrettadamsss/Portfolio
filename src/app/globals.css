@@ -7,7 +7,7 @@
   /* Green theme colors */
   --green-light: #e6f4ea;
   --green-dark: #0f2e1c;
-  --green-gradient: linear-gradient(135deg, #174f2e 0%, #26734d 100%);
+  --green-gradient: linear-gradient(190deg, #1e552a 0%, rgb(0, 0, 0) 90%);
 }
 
 @theme inline {
@@ -56,7 +56,7 @@ body {
 }
 
 @utility glass-card {
-  @apply rounded-3xl border border-emerald-200/15 bg-emerald-950/30 backdrop-blur;
+  @apply rounded-3xl border border-white/20 bg-white/10 backdrop-blur;
 }
 
 @utility section-title {
