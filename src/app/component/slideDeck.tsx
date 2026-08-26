@@ -21,16 +21,6 @@ export default function SlideDeck() {
     return () => window.clearTimeout(timeoutId);
   }, [activeIndex]);
 
-  const showPrevImage = () => {
-    setActiveIndex(
-      (current) => (current - 1 + DECK_IMAGES.length) % DECK_IMAGES.length,
-    );
-  };
-
-  const showNextImage = () => {
-    setActiveIndex((current) => (current + 1) % DECK_IMAGES.length);
-  };
-
   const selectImage = (index: number) => {
     setActiveIndex(index);
   };
@@ -58,50 +48,6 @@ export default function SlideDeck() {
           </div>
         );
       })}
-
-      <button
-        type="button"
-        onClick={showPrevImage}
-        aria-label="Previous photo"
-        className="absolute left-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/30 text-emerald-50 transition-colors hover:bg-black/45 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-50"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          className="h-5 w-5"
-          aria-hidden="true"
-        >
-          <path
-            d="M14.5 5.5 8 12l6.5 6.5"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        onClick={showNextImage}
-        aria-label="Next photo"
-        className="absolute right-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/30 text-emerald-50 transition-colors hover:bg-black/45 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-50"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          className="h-5 w-5"
-          aria-hidden="true"
-        >
-          <path
-            d="M9.5 5.5 16 12l-6.5 6.5"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
 
       <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/80 via-black/55 to-transparent p-3">
         <ul className="flex items-center justify-center gap-2 pb-2">

@@ -47,9 +47,6 @@ body {
   @apply hover:after:scale-x-100;
 }
 
-@utility section-shell {
-  @apply mx-auto max-w-screen-2xl px-10 md:px-16 lg:px-30;
-}
 
 @utility section-block {
   @apply py-10 md:py-15 lg:py-20;
