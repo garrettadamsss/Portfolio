@@ -6,8 +6,8 @@
 
   /* Green theme colors */
   --green-light: #e6f4ea;
-  --green-dark: #0f2e1c;
-  --green-gradient: linear-gradient(190deg, #1e552a 0%, rgb(0, 0, 0) 90%);
+  --green-dark: #121212;
+  --green-gradient: linear-gradient(200deg, #132f19 30%, #000000 100%);
 }
 
 @theme inline {
