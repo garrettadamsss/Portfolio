@@ -61,7 +61,7 @@ export default function SlideDeck() {
                   onClick={() => selectImage(index)}
                   aria-label={`Show photo ${index + 1}`}
                   aria-pressed={isActive}
-                  className={`relative h-14 w-14 transition ${
+                  className={`relative h-14 w-14 transition cursor-pointer ${
                     isActive ? "scale-110" : "opacity-80 hover:opacity-100"
                   }`}
                 >
