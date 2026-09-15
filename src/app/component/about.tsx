@@ -1,11 +1,7 @@
-"use client";
-
-import SlideDeck from "./slideDeck";
-
 export default function AboutSection() {
   return (
-    <section id="about" className="section-block flex items-stretch gap-8">
-      <div className="glass-card w-1/2 p-8">
+    <section id="about" className="section-block">
+      <div className="glass-card p-8">
         <h2 className="section-title">About</h2>l
         <p className="mt-4 leading-7 text-emerald-50/90">
           Hello! I&apos;m Garrett, a software engineer with a passion for
@@ -82,10 +78,6 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="flex w-1/2 items-stretch justify-end">
-        <SlideDeck />
       </div>
     </section>
   );
