@@ -4,21 +4,21 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="section-block grid items-center gap-12 md:min-h-[75vh] md:grid-cols-2 md:gap-16"
+      className="section-block grid items-center gap-12 md:min-h-[50vh] md:grid-cols-2 md:gap-16"
     >
       <div className="space-y-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-semibold leading-tight text-emerald-50 md:text-6xl lg:text-7xl">
             Garrett Adams
           </h1>
-          <p className="text-sm uppercase tracking-[0.28em] text-emerald-200/90">
+          <p className="text-m md:text-lg uppercase tracking-[0.28em] text-emerald-200/90">
             Software Engineer
           </p>
         </div>
 
         <p className="max-w-md text-base leading-8 text-emerald-100/90 md:text-lg">
-          Welcome to my portfolio! Explore my projects and experience to see
-          what I have been building.
+          Welcome to my portfolio! Feel free to reach out through any of links below and check out my 
+          resume!
         </p>
 
         <div className="flex items-center gap-5 text-emerald-100">
