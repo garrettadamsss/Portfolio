@@ -2,10 +2,12 @@ export default function AboutSection() {
   return (
     <section id="about" className="section-block">
       <div className="glass-card p-8">
-        <h2 className="section-title">About</h2>l
+        <h2 className="section-title">About</h2>
         <p className="mt-4 leading-7 text-emerald-50/90">
-          Hello! I&apos;m Garrett, a software engineer with a passion for
-          creating simple, performant systems and devling into new technologies.
+          Hello, I&apos;m Garrett. I love building and learning new things, and
+          to me, software engineering is one of the best ways to do both. That
+          is what led me to pursue this path, and I&apos;m excited to keep
+          building projects and expanding my skill set.
         </p>
         <div className="mt-6 space-y-4">
           <div className="border-b border-emerald-200/10 pb-4 last:border-b-0 last:pb-0">
@@ -19,9 +21,10 @@ export default function AboutSection() {
               </span>
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
-              My current focus is on expanding my backend expertise in order to
-              claim the <span className="italic">&quot;Full Stack&quot;</span>{" "}
-              title.
+              My experience is currently stronger on the frontend, but my goal
+              is to become a well-rounded full-stack engineer. I&apos;m working
+              toward that by building projects with backend technologies and
+              gaining more industry experience
             </p>
           </div>
 
@@ -37,11 +40,12 @@ export default function AboutSection() {
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
               At <span className="font-semibold">Paramount</span>, I&apos;m
-              building
-              <span className="italic">Lite</span>, a high-performance frontend
-              app targeting low-end devices. I am currently converging
-              <span className="font-semibold">PlutoTV</span> and
-              <span className="font-semibold">Paramount+</span> into a single,
+              helping to build
+              <span className="italic"> Lite</span>, a high-performance frontend
+              app targeting low-powered devices. I am currently converging the
+              frontend
+              <span className="font-semibold"> PlutoTV</span> and
+              <span className="font-semibold"> Paramount+</span> into a single,
               shared app.
             </p>
           </div>
@@ -57,8 +61,12 @@ export default function AboutSection() {
               </span>
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
-              I am currently working on a Distiller and trying to learn how to
-              use AI agents.
+              The aim of
+              <span className="italic"> Stock Distiller </span> is creating
+              repeadatable system that executes a particular analysis structure
+              I have developed. In its current infancy stage it is a crude Agent
+              Skill, but the end goal is to create a custom interface for the
+              agent output.
             </p>
           </div>
 
@@ -69,12 +77,13 @@ export default function AboutSection() {
                   className="h-px w-5 shrink-0 bg-gradient-to-r from-emerald-400/80 to-emerald-400/0"
                   aria-hidden="true"
                 />
-                <span>Fun Facts</span>
+                <span>Hobbies</span>
               </span>
             </h3>
             <p className="pt-2 leading-7 text-emerald-50/90">
-              Outside of coding, I love to both play and listen to music,
-              struggle to play golf, and lose money trading stocks.
+              I have a lot of hobbies, including snowboarding, surfing, and MMA,
+              but my real passions are getting better at golf and trying to make
+              money through stock investing.
             </p>
           </div>
         </div>
