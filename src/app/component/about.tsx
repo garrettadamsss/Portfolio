@@ -6,8 +6,7 @@ export default function AboutSection() {
         <p className="mt-4 leading-7 text-emerald-50/90">
           Hello, I&apos;m Garrett. I love building and learning new things, and
           to me, software engineering is one of the best ways to do both. That
-          is what led me to pursue this path, and I&apos;m excited to keep
-          building projects and expanding my skill set.
+          is what led me to pursue this path, and I&apos;m excited to expanding my skill set and build more projects. 
         </p>
         <div className="mt-6 space-y-4">
           <div className="border-b border-emerald-200/10 pb-4 last:border-b-0 last:pb-0">
