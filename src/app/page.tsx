@@ -11,7 +11,7 @@ export default function Main() {
   return (
     <div className="min-h-screen text-foreground">
       <main className="mx-auto max-w-screen-xl px-10 md:px-16 lg:px-30">
-        {/* <Navbar /> */}
+        <Navbar />
         <HomeSection />
         <AboutSection />
         <ExperienceSection />

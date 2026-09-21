@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const DECK_IMAGES = [
-  "/about/headshot.JPEG",
-  "/about/paramount.jpeg",
-  "/about/golf.JPG",
-  "/about/snowboarding.jpg",
+  "/slideDeck/headshot.JPEG",
+  "/slideDeck/paramount.jpeg",
+  "/slideDeck/golf.JPG",
+  "/slideDeck/snowboarding.jpg",
 ];
 
 export default function SlideDeck() {
