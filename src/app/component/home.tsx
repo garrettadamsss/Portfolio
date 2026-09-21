@@ -4,14 +4,14 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="section-block grid items-center gap-12 md:min-h-[50vh] md:grid-cols-2 md:gap-16"
+      className="section-block grid items-center gap-15 mt-10 min-h-[80vh] md:min-h-[60vh] md:grid-cols-2 md:gap-16"
     >
-      <div className="space-y-8">
-        <div className="space-y-4">
-          <h1 className="text-5xl font-semibold leading-tight text-emerald-50 md:text-6xl lg:text-7xl">
+      <div className="space-y-4 md:space-y-8 ">
+        <div className="space-y-2 md:space-y-4">
+          <h1 className="text-4xl font-semibold leading-tight text-emerald-50 md:text-6xl lg:text-7xl">
             Garrett Adams
           </h1>
-          <p className="text-m md:text-lg uppercase tracking-[0.28em] text-emerald-200/90">
+          <p className="text-sm md:text-lg uppercase tracking-[0.28em] text-emerald-200/90">
             Software Engineer
           </p>
         </div>
