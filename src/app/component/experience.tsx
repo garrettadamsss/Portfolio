@@ -34,7 +34,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="section-block">
-      <div className="glass-card mt-15 p-8">
+      <div className="glass-card">
         <h3 className="section-title">Experience</h3>
 
         <ul className="relative mt-6 space-y-8 pl-8 before:absolute before:bottom-1 before:left-2.5 before:top-1 before:w-px before:bg-emerald-300/40">

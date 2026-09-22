@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
-  { label: "Home", href: "#home"},
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="fixed bottom-20 left-30 z-50">
+    <header className="fixed bottom-15 left-20 z-50">
       <nav
         ref={navRef}
         aria-label="Primary"
@@ -55,7 +55,7 @@ export default function Navbar() {
           }`}
         >
           <div className="flex min-h-0 min-w-max flex-col justify-end overflow-hidden">
-            <ul className="flex flex-col gap-6 pb-4">
+            <ul className="flex flex-col gap-4 py-4">
               {navLinks.map((link, index) => (
                 <li
                   key={link.href}
@@ -94,7 +94,7 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt=""
-            className="h-16 w-auto md:h-25"
+            className="h-10 w-auto md:h-15"
             width={56}
             height={56}
             quality={95}

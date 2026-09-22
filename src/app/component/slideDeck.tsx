@@ -26,7 +26,7 @@ export default function SlideDeck() {
   };
 
   return (
-    <div className="relative h-full w-full min-h-[24rem] max-w-[34rem] overflow-hidden rounded-3xl border border-white/20">
+    <div className="relative h-full w-full overflow-hidden rounded-3xl border border-white/20">
       {DECK_IMAGES.map((imageSrc, index) => {
         const isActive = index === activeIndex;
 
@@ -42,7 +42,6 @@ export default function SlideDeck() {
               alt={`Selected photo ${index + 1}`}
               fill
               quality={95}
-              sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 32rem, (min-width: 768px) 45vw, 92vw"
               className="object-cover object-[center_50%]"
             />
           </div>
@@ -70,7 +69,6 @@ export default function SlideDeck() {
                     alt=""
                     fill
                     quality={85}
-                    sizes="56px"
                     className="object-cover rounded-lg"
                   />
                 </button>

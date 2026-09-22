@@ -5,12 +5,11 @@ import ProjectsSection from "./component/projects";
 import HomeSection from "./component/home";
 import ExperienceSection from "./component/experience";
 
-
 export default function Main() {
   return (
     <div className="min-h-screen text-foreground">
       <Navbar />
-      <main className="mx-auto max-w-screen-xl px-5 md:px-16 lg:px-30">
+      <main className="mx-auto max-w-screen-xl px-5 md:px-35">
         <HomeSection />
         <AboutSection />
         <ExperienceSection />

@@ -4,21 +4,24 @@ const projects = [
     description:
       "This stock sentiment dashboard surfaces current market mood, key metrics, and the most relevant signals in one place.",
     skills: ["AI MCP Agents"],
-    accent: "bg-[radial-gradient(circle_at_top_left,_rgba(16,185,129,0.9),_rgba(17,24,39,0.92)_55%,_rgba(2,6,23,1)_100%)]",
+    accent:
+      "bg-[radial-gradient(circle_at_top_left,_rgba(16,185,129,0.9),_rgba(17,24,39,0.92)_55%,_rgba(2,6,23,1)_100%)]",
   },
   {
     title: "LeetCode Discord Bot",
     description:
       "This Discord bot generates fresh coding challenges based on the difficulty a user selects.",
     skills: ["Javascript", "NodeJS", "Web Scraping", "APIs"],
-    accent: "bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.8),_rgba(15,23,42,0.95)_55%,_rgba(2,6,23,1)_100%)]",
+    accent:
+      "bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.8),_rgba(15,23,42,0.95)_55%,_rgba(2,6,23,1)_100%)]",
   },
   {
     title: "Northrop Grumman Collaboration Project - UAV",
     description:
       "This collaboration focused on building and refining a UAV system using practical robotics workflows and testing.",
     skills: ["Python", "Robotics"],
-    accent: "bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.75),_rgba(15,23,42,0.96)_58%,_rgba(2,6,23,1)_100%)]",
+    accent:
+      "bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.75),_rgba(15,23,42,0.96)_58%,_rgba(2,6,23,1)_100%)]",
   },
   {
     title: "UNET Image Segmentation",
@@ -31,20 +34,22 @@ const projects = [
       "Pytorch",
       "Keras",
     ],
-    accent: "bg-[radial-gradient(circle_at_top_left,_rgba(168,85,247,0.8),_rgba(15,23,42,0.96)_58%,_rgba(2,6,23,1)_100%)]",
+    accent:
+      "bg-[radial-gradient(circle_at_top_left,_rgba(168,85,247,0.8),_rgba(15,23,42,0.96)_58%,_rgba(2,6,23,1)_100%)]",
   },
   {
     title: "My First Website",
     description:
       "This first website was a simple static business landing page built for my father’s company and is still running today.",
     skills: ["HTML", "CSS", "Javascript", "PHP"],
-    accent: "bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.8),_rgba(15,23,42,0.95)_58%,_rgba(2,6,23,1)_100%)]",
+    accent:
+      "bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.8),_rgba(15,23,42,0.95)_58%,_rgba(2,6,23,1)_100%)]",
   },
 ];
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="my-15">
+    <section id="projects" className="mb-15">
       <div className="flex items-end justify-between gap-4">
         <h2 className="section-title">Featured Projects</h2>
         <a
@@ -71,8 +76,7 @@ export default function ProjectsSection() {
             />
 
             <div className="relative flex min-h-[320px] items-end p-6">
-              <div className="w-full translate-y-6 opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-              >
+              <div className="w-full translate-y-6 opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100">
                 <div className="inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-emerald-50/90">
                   Project Details
                 </div>
@@ -92,9 +96,7 @@ export default function ProjectsSection() {
               </div>
             </div>
 
-            <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 p-6 transition duration-300 ease-out group-hover:-translate-y-3 group-hover:opacity-0"
-            >
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 p-6 transition duration-300 ease-out group-hover:-translate-y-3 group-hover:opacity-0">
               <div className="inline-flex rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-emerald-50/90">
                 {project.title}
               </div>
