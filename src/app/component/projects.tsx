@@ -52,12 +52,6 @@ export default function ProjectsSection() {
     <section id="projects" className="mb-15">
       <div className="flex items-end justify-between gap-4">
         <h2 className="section-title">Featured Projects</h2>
-        <a
-          href="#"
-          className="text-sm font-medium text-emerald-200 hover:text-emerald-100"
-        >
-          View all
-        </a>
       </div>
 
       <div className="mt-6 grid w-full gap-5 lg:grid-cols-2">
@@ -76,10 +70,7 @@ export default function ProjectsSection() {
             />
 
             <div className="relative flex min-h-[320px] items-end p-6">
-              <div className="w-full translate-y-6 opacity-0 transition duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="inline-flex rounded-full border border-white/20 bg-black/25 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-emerald-50/90">
-                  Project Details
-                </div>
+              <div className="w-full ">
                 <h3 className="mt-4 text-xl font-semibold text-emerald-50">
                   {project.title}
                 </h3>
@@ -93,12 +84,6 @@ export default function ProjectsSection() {
                     </span>
                   ))}
                 </div>
-              </div>
-            </div>
-
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 p-6 transition duration-300 ease-out group-hover:-translate-y-3 group-hover:opacity-0">
-              <div className="inline-flex rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-emerald-50/90">
-                {project.title}
               </div>
             </div>
           </article>
