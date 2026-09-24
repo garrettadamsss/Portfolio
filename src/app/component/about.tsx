@@ -36,10 +36,10 @@ const tabs = [
     content: (
       <p className="leading-7 text-emerald-50/90">
         The aim of
-        <span className="italic"> Stock Distiller </span> is creating repeadatable
-        system that executes a particular analysis structure I have developed. In
-        its current infancy stage it is a crude Agent Skill, but the end goal is
-        to create a custom interface for the agent output.
+        <span className="italic"> Stock Distiller </span> is creating
+        repeadatable system that executes a particular analysis structure I have
+        developed. In its current infancy stage it is a crude Agent Skill, but
+        the end goal is to create a custom interface for the agent output.
       </p>
     ),
   },
@@ -48,9 +48,8 @@ const tabs = [
     label: "Hobbies",
     content: (
       <p className="leading-7 text-emerald-50/90">
-        I have a lot of hobbies, including snowboarding, surfing, and MMA, but my
-        real passions are getting better at golf and trying to make money through
-        stock investing.
+        I have a lot of hobbies, including snowboarding, surfing, and MMA, but
+        my main hobbies are golfing and stock investing.
       </p>
     ),
   },
@@ -77,10 +76,9 @@ export default function AboutSection() {
       <div className="glass-card">
         <h2 className="section-title">About</h2>
         <p className="mt-4 leading-7 text-emerald-50/90">
-          Hello, I&apos;m Garrett. I love building and learning new things, and
-          to me, software engineering is one of the best ways to do both. That
-          is what led me to pursue this path, and I&apos;m excited to expanding
-          my skill set and build more projects.
+          Hello, I&apos;m Garrett. I love to build and learn new things, and
+          software engineering is perfectly aligned with that. I&apos;m excited
+          to expand my skill set and start building some projects again. 
         </p>
 
         <div className="mt-8">
@@ -108,9 +106,9 @@ export default function AboutSection() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`cursor-pointer rounded-full border px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] transition ${
                     isActive
-                      ? "border-emerald-200/60 bg-emerald-200/15 text-emerald-50"
-                      : "border-emerald-200/20 text-emerald-200/70 hover:border-emerald-200/40 hover:text-emerald-100"
-                  }`}
+                    ? "border-emerald-200/60 bg-emerald-200/15 text-emerald-50"
+                    : "border-emerald-200/20 text-emerald-200/70 hover:border-emerald-200/40 hover:text-emerald-100"
+                    }`}
                 >
                   {tab.label}
                 </button>

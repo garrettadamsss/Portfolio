@@ -17,7 +17,7 @@ export default function HomeSection() {
         </div>
 
         <p className="max-w-md text-base leading-8 text-emerald-100/90 md:text-lg">
-          Welcome to my portfolio! Feel free to reach out and check out my
+          Welcome to my portfolio! Connect with me and check out my
           resume through the links below!
         </p>
 
