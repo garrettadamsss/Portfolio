@@ -4,7 +4,7 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="section-block grid gap-15 mt-10 items-center md:grid-cols-2 md:gap-16"
+      className="section-block grid gap-15 items-center md:grid-cols-2"
     >
       <div className="space-y-4 md:space-y-8 ">
         <div className="space-y-2 md:space-y-4">

@@ -49,9 +49,11 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="mb-15">
+    <section id="projects" className="mb-15 scroll-mt-24">
       <div className="flex items-end justify-between gap-4">
-        <h2 className="section-title">Featured Projects</h2>
+        <div>
+          <h2 className="section-title">Featured Projects</h2>
+        </div>
       </div>
 
       <div className="mt-6 grid w-full gap-5 lg:grid-cols-2">

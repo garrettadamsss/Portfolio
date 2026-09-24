@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 const DECK_IMAGES = [
   "/slideDeck/headshot.JPEG",
   "/slideDeck/paramount.jpeg",
-  "/slideDeck/golf.JPG",
   "/slideDeck/snowboarding.jpg",
+  "/slideDeck/golf.JPG",
 ];
 
 export default function SlideDeck() {

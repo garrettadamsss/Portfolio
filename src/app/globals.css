@@ -17,6 +17,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   background: var(--green-dark);
   color: var(--foreground);
@@ -48,11 +58,15 @@ body {
 }
 
 @utility section-block {
-  @apply mb-20 md:mb-25;
+  @apply mb-20 scroll-mt-24 md:mb-25;
 }
 
 @utility glass-card {
   @apply rounded-3xl p-8 border border-white/20 bg-white/10 backdrop-blur;
+}
+
+@utility nav-link-active {
+  @apply text-white after:scale-x-100;
 }
 
 @utility section-title {

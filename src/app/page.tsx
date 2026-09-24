@@ -7,7 +7,7 @@ import ExperienceSection from "./component/experience";
 
 export default function Main() {
   return (
-    <div className="min-h-screen text-foreground">
+    <div className="min-h-screen text-foreground my-15">
       <Navbar />
       <main className="mx-auto max-w-screen-xl px-5 md:px-35">
         <HomeSection />

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
@@ -12,7 +11,32 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState(navLinks[0].href);
   const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const sections = navLinks
+      .map((link) => document.getElementById(link.href.slice(1)))
+      .filter((section): section is HTMLElement => section !== null);
+
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort(
+            (a, b) => a.boundingClientRect.top - b.boundingClientRect.top,
+          )[0];
+
+        if (visible) setActiveHref(`#${visible.target.id}`);
+      },
+      { rootMargin: "-45% 0px -45% 0px" },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -28,78 +52,44 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="fixed bottom-15 left-20 z-50">
+    <header>
       <nav
-        ref={navRef}
-        aria-label="Primary"
-        className="flex flex-col items-start"
-        onMouseEnter={() => {
-          if (!window.matchMedia("(hover: none)").matches) setOpen(true);
-        }}
-        onMouseLeave={() => {
-          if (!window.matchMedia("(hover: none)").matches) setOpen(false);
-        }}
-        onFocus={() => {
-          if (!window.matchMedia("(hover: none)").matches) setOpen(true);
-        }}
-        onBlur={(event) => {
-          if (window.matchMedia("(hover: none)").matches) return;
-          if (!event.currentTarget.contains(event.relatedTarget as Node)) {
-            setOpen(false);
-          }
-        }}
+        aria-label="Section progress"
+        className="fixed right-6 top-1/2 z-50 hidden -translate-y-1/2 md:block"
       >
-        <div
-          className={`grid w-max transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none ${
-            open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-          }`}
-        >
-          <div className="flex min-h-0 min-w-max flex-col justify-end overflow-hidden">
-            <ul className="flex flex-col gap-4 py-4">
-              {navLinks.map((link, index) => (
-                <li
-                  key={link.href}
-                  className={`transition-[opacity,transform] duration-200 ease-out motion-reduce:transition-none ${
-                    open
-                      ? "translate-y-0 opacity-100"
-                      : "pointer-events-none translate-y-1 opacity-0"
-                  }`}
-                  style={{
-                    transitionDelay: open ? `${index * 70}ms` : "0ms",
-                  }}
+        <ul className="flex flex-col items-end gap-3">
+          {navLinks.map((link) => {
+            const isActive = link.href === activeHref;
+
+            return (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  aria-label={link.label}
+                  aria-current={isActive ? "true" : undefined}
+                  className="group flex items-center justify-end gap-2 py-1"
                 >
-                  <a
-                    href={link.href}
-                    className="nav-link"
-                    onClick={() => setOpen(false)}
+                  <span
+                    className={`text-xs font-medium uppercase tracking-[0.18em] transition-opacity duration-200 motion-reduce:transition-none ${
+                      isActive
+                        ? "text-emerald-100 opacity-100"
+                        : "text-emerald-200/70 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+                    }`}
                   >
                     {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <a
-          aria-label="Open nav menu"
-          aria-expanded={open}
-          className="block rounded-sm outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-200"
-          onClick={(event) => {
-            if (!window.matchMedia("(hover: none)").matches) return;
-            event.preventDefault();
-            setOpen((value) => !value);
-          }}
-        >
-          <Image
-            src="/logo.png"
-            alt=""
-            className="h-10 w-auto md:h-15"
-            width={56}
-            height={56}
-            quality={95}
-          />
-        </a>
+                  </span>
+                  <span
+                    className={`w-1.5 rounded-full transition-all duration-300 motion-reduce:transition-none ${
+                      isActive
+                        ? "h-6 bg-emerald-200"
+                        : "h-1.5 bg-emerald-200/35 group-hover:bg-emerald-200/70"
+                    }`}
+                  />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </nav>
     </header>
   );
