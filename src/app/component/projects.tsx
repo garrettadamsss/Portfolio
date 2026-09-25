@@ -1,27 +1,30 @@
+import Image from "next/image";
+
 const projects = [
   {
     title: "Distiller (WIP)",
     description:
       "This stock sentiment dashboard surfaces current market mood, key metrics, and the most relevant signals in one place.",
     skills: ["AI MCP Agents"],
-    accent:
-      "bg-[radial-gradient(circle_at_top_left,_rgba(16,185,129,0.9),_rgba(17,24,39,0.92)_55%,_rgba(2,6,23,1)_100%)]",
+    imageSrc: "/projects/wip.png",
+    link: 'https://www.adamsbros.com/'
   },
   {
     title: "LeetCode Discord Bot",
     description:
       "This Discord bot generates fresh coding challenges based on the difficulty a user selects.",
     skills: ["Javascript", "NodeJS", "Web Scraping", "APIs"],
-    accent:
-      "bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.8),_rgba(15,23,42,0.95)_55%,_rgba(2,6,23,1)_100%)]",
+    imageSrc: "/projects/discordBot.png",
+    link: 'https://www.adamsbros.com/'
+
   },
   {
     title: "Northrop Grumman Collaboration Project - UAV",
     description:
       "This collaboration focused on building and refining a UAV system using practical robotics workflows and testing.",
     skills: ["Python", "Robotics"],
-    accent:
-      "bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.75),_rgba(15,23,42,0.96)_58%,_rgba(2,6,23,1)_100%)]",
+    imageSrc: "/projects/ngcp.png",
+    link: 'https://www.adamsbros.com/'
   },
   {
     title: "UNET Image Segmentation",
@@ -34,16 +37,16 @@ const projects = [
       "Pytorch",
       "Keras",
     ],
-    accent:
-      "bg-[radial-gradient(circle_at_top_left,_rgba(168,85,247,0.8),_rgba(15,23,42,0.96)_58%,_rgba(2,6,23,1)_100%)]",
+    imageSrc: "/projects/nsf.png",
+    link: 'https://www.adamsbros.com/'
   },
   {
     title: "My First Website",
     description:
       "This first website was a simple static business landing page built for my father’s company and is still running today.",
     skills: ["HTML", "CSS", "Javascript", "PHP"],
-    accent:
-      "bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.8),_rgba(15,23,42,0.95)_58%,_rgba(2,6,23,1)_100%)]",
+    imageSrc: "/projects/adamsbros.png",
+    link: "https://www.adamsbros.com/",
   },
 ];
 
@@ -58,19 +61,25 @@ export default function ProjectsSection() {
 
       <div className="mt-6 grid w-full gap-5 lg:grid-cols-2">
         {projects.map((project) => (
-          <article
+          <a
             key={project.title}
-            className="glass-card group relative min-h-[320px] w-full overflow-hidden transition hover:-translate-y-1 hover:border-emerald-200/75"
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open ${project.title}`}
+            className="glass-card group relative block min-h-[320px] w-full overflow-hidden transition hover:-translate-y-1 hover:border-emerald-200/75"
           >
-            <div
-              className={`absolute inset-0 ${project.accent}`}
-              aria-hidden="true"
+            <Image
+              className={`absolute inset-0 object-cover`}
+              src={project.imageSrc}
+              alt="project image"
+              fill
+              quality={85}
             />
             <div
-              className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15 transition duration-300 group-hover:from-slate-950/95 group-hover:via-slate-950/55"
+              className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent transition duration-300 group-hover:from-black/95 group-hover:via-black/55"
               aria-hidden="true"
             />
-
             <div className="relative flex min-h-[320px] items-end p-6">
               <div className="w-full ">
                 <h3 className="mt-4 text-xl font-semibold text-emerald-50">
@@ -88,7 +97,7 @@ export default function ProjectsSection() {
                 </div>
               </div>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </section>

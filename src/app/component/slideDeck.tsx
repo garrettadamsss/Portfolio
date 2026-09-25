@@ -66,7 +66,7 @@ export default function SlideDeck() {
                 >
                   <Image
                     src={imageSrc}
-                    alt=""
+                    alt="personal image"
                     fill
                     quality={85}
                     className="object-cover rounded-lg"
