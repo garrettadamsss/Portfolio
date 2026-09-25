@@ -7,7 +7,7 @@ const projects = [
       "This stock sentiment dashboard surfaces current market mood, key metrics, and the most relevant signals in one place.",
     skills: ["AI MCP Agents"],
     imageSrc: "/projects/wip.png",
-    link: 'https://www.adamsbros.com/'
+    // link: 'https://www.adamsbros.com/'
   },
   {
     title: "LeetCode Discord Bot",
@@ -15,7 +15,7 @@ const projects = [
       "This Discord bot generates fresh coding challenges based on the difficulty a user selects.",
     skills: ["Javascript", "NodeJS", "Web Scraping", "APIs"],
     imageSrc: "/projects/discordBot.png",
-    link: 'https://www.adamsbros.com/'
+    link: 'https://github.com/garrettadamsss/LeetcodeBot'
 
   },
   {
@@ -24,7 +24,7 @@ const projects = [
       "This collaboration focused on building and refining a UAV system using practical robotics workflows and testing.",
     skills: ["Python", "Robotics"],
     imageSrc: "/projects/ngcp.png",
-    link: 'https://www.adamsbros.com/'
+    link: 'https://github.com/NGCP22-23/UAV'
   },
   {
     title: "UNET Image Segmentation",
@@ -38,7 +38,7 @@ const projects = [
       "Keras",
     ],
     imageSrc: "/projects/nsf.png",
-    link: 'https://www.adamsbros.com/'
+    link: 'https://github.com/garrettadamsss/UNET_Image_Segmentation'
   },
   {
     title: "My First Website",
@@ -77,7 +77,7 @@ export default function ProjectsSection() {
               quality={85}
             />
             <div
-              className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent transition duration-300 group-hover:from-black/95 group-hover:via-black/55"
+              className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent transition duration-300 group-hover:from-black/95 group-hover:via-black/55"
               aria-hidden="true"
             />
             <div className="relative flex min-h-[320px] items-end p-6">
