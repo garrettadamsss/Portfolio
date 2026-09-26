@@ -7,7 +7,7 @@ const projects = [
       "Dashboard that runs my custom built analysis on given stocks in order to improve investing decisions.",
     skills: ["AI MCP Agents"],
     imageSrc: "/projects/wip.png",
-    // link: 'https://www.adamsbros.com/'
+    link: 'https://github.com/garrettadamsss/StockAnalyzer'
   },
   {
     title: "LeetCode Discord Bot",
