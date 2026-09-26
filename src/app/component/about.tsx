@@ -9,9 +9,9 @@ const tabs = [
     content: (
       <p className="leading-7 text-emerald-50/90">
         My experience is currently stronger on the frontend, but my goal is to
-        become a well-rounded full-stack engineer. I&apos;m working toward that
+        become a full-stack engineer. I&apos;m working toward that
         by building projects with backend technologies and gaining more industry
-        experience
+        experience.
       </p>
     ),
   },
@@ -23,7 +23,7 @@ const tabs = [
         At <span className="font-semibold">Paramount</span>, I&apos;m helping to
         build
         <span className="italic"> Lite</span>, a high-performance frontend app
-        targeting low-powered devices. I am currently converging the frontend
+        targeting low-powered devices. Currently working with my team on converging the frontend
         <span className="font-semibold"> PlutoTV</span> and
         <span className="font-semibold"> Paramount+</span> into a single, shared
         app.
@@ -48,8 +48,8 @@ const tabs = [
     label: "Hobbies",
     content: (
       <p className="leading-7 text-emerald-50/90">
-        I have a lot of hobbies, including snowboarding, surfing, and MMA, but
-        my main hobbies are golfing and stock investing.
+        There are many things I am interested in such as snowboarding, surfing, and MMA, but
+        mainly I enjoy golfing and stock investing.
       </p>
     ),
   },

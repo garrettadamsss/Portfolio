@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Distiller (WIP)",
     description:
-      "This stock sentiment dashboard surfaces current market mood, key metrics, and the most relevant signals in one place.",
+      "Dashboard that runs my custom built analysis on given stocks in order to improve investing decisions.",
     skills: ["AI MCP Agents"],
     imageSrc: "/projects/wip.png",
     // link: 'https://www.adamsbros.com/'
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "LeetCode Discord Bot",
     description:
-      "This Discord bot generates fresh coding challenges based on the difficulty a user selects.",
+      "This Discord bot generates coding challenges based on the difficulty a user selects. Utilizes Discord NodeJS module and web scraping data pipeline. ",
     skills: ["Javascript", "NodeJS", "Web Scraping", "APIs"],
     imageSrc: "/projects/discordBot.png",
     link: 'https://github.com/garrettadamsss/LeetcodeBot'
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Northrop Grumman Collaboration Project - UAV",
     description:
-      "This collaboration focused on building and refining a UAV system using practical robotics workflows and testing.",
+      "Lead a team in collaboration with Northrop Grumman focused on building an autonomous UAV system using flight software and components.",
     skills: ["Python", "Robotics"],
     imageSrc: "/projects/ngcp.png",
     link: 'https://github.com/NGCP22-23/UAV'
@@ -43,7 +43,7 @@ const projects = [
   {
     title: "My First Website",
     description:
-      "This first website was a simple static business landing page built for my father’s company and is still running today.",
+      "This first website was a simple static business landing page built for my father’s company that is still running today. This is where I learned the basics of web development.",
     skills: ["HTML", "CSS", "Javascript", "PHP"],
     imageSrc: "/projects/adamsbros.png",
     link: "https://www.adamsbros.com/",
