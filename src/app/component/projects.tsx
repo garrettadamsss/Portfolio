@@ -21,8 +21,8 @@ const projects = [
   {
     title: "Northrop Grumman Collaboration Project - UAV",
     description:
-      "Lead a team in collaboration with Northrop Grumman focused on building an autonomous UAV system using flight software and components.",
-    skills: ["Python", "Robotics"],
+      "Lead a team in collaboration with Northrop Grumman focused on building an autonomous UAV system using flight libraries and components.",
+    skills: ["Python", "Robotics", "APIs"],
     imageSrc: "/projects/ngcp.png",
     link: 'https://github.com/NGCP22-23/UAV'
   },
@@ -33,9 +33,7 @@ const projects = [
     skills: [
       "Machine Learning",
       "Python",
-      "Jupyter Notebook",
       "Pytorch",
-      "Keras",
     ],
     imageSrc: "/projects/nsf.png",
     link: 'https://github.com/garrettadamsss/UNET_Image_Segmentation'
@@ -67,7 +65,7 @@ export default function ProjectsSection() {
             target="_blank"
             rel="noreferrer"
             aria-label={`Open ${project.title}`}
-            className="glass-card group relative block min-h-[320px] w-full overflow-hidden transition hover:-translate-y-1 hover:border-emerald-200/75"
+            className="glass-card group relative block h-90 w-full overflow-hidden transition hover:-translate-y-1 hover:border-emerald-200/75"
           >
             <Image
               className={`absolute inset-0 object-cover`}
@@ -80,7 +78,7 @@ export default function ProjectsSection() {
               className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent transition duration-300 group-hover:from-black/95 group-hover:via-black/55"
               aria-hidden="true"
             />
-            <div className="relative flex min-h-[320px] items-end p-6">
+            <div className="relative flex h-full items-end p-2">
               <div className="w-full ">
                 <h3 className="mt-4 text-xl font-semibold text-emerald-50">
                   {project.title}
