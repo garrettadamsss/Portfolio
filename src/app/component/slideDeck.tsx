@@ -8,7 +8,10 @@ const DECK_IMAGES = [
   "/slideDeck/paramount.jpeg",
   "/slideDeck/snowboarding.jpg",
   "/slideDeck/golf.JPG",
-];
+] as const;
+
+/** Matches home hero column (~half grid, max ~480px wide). */
+const MAIN_IMAGE_SIZES = "(max-width: 768px) 100vw, 480px";
 
 export default function SlideDeck() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,7 +44,9 @@ export default function SlideDeck() {
               src={imageSrc}
               alt={`Selected photo ${index + 1}`}
               fill
-              quality={95}
+              sizes={MAIN_IMAGE_SIZES}
+              quality={75}
+              priority={index === 0}
               className="object-cover object-[center_50%]"
             />
           </div>
@@ -66,10 +71,12 @@ export default function SlideDeck() {
                 >
                   <Image
                     src={imageSrc}
-                    alt="personal image"
-                    fill
-                    quality={85}
-                    className="object-cover rounded-lg"
+                    alt="slide deck preview"
+                    width={56}
+                    height={56}
+                    sizes="56px"
+                    quality={60}
+                    className="h-full w-full object-cover rounded-lg"
                   />
                 </button>
               </li>
