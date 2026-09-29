@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Distiller (WIP)",
+    title: "StockAnalyzer (WIP)",
     description:
-      "Dashboard that runs my custom built analysis on given stocks in order to improve investing decisions.",
+      "Web app dashboard that executes my custom built analysis through an agent skill and visualizes the resulting data. ",
     skills: ["AI MCP Agents"],
     imageSrc: "/projects/wip.png",
     link: 'https://github.com/garrettadamsss/StockAnalyzer'

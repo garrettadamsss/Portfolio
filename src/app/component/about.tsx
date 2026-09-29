@@ -36,7 +36,7 @@ const tabs = [
     content: (
       <p className="leading-7 text-emerald-50/90">
         The aim of
-        <span className="italic"> Stock Distiller </span> is creating
+        <span className="italic"> Stock Analyzer </span> is creating
         repeadatable system that executes a particular analysis structure I have
         developed. In its current infancy stage it is a crude Agent Skill, but
         the end goal is to create a custom interface for the agent output.
