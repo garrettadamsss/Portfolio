@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://garrettadams.vercel.app"),
   title: "Garrett Adams Portfolio",
-  description: "Portolio of my projects and information about myself.",
+  description: "Portfolio of Garrett Adams including projects, experience, and contact information",
 };
 
 export default function RootLayout({
