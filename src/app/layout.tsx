@@ -14,10 +14,44 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://garrettadams.vercel.app";
+const siteName = "Garrett Adams";
+const description =  "Portfolio of Garrett Adams including projects, experience, and contact information.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://garrettadams.vercel.app"),
-  title: "Garrett Adams Portfolio",
-  description: "Portfolio of Garrett Adams including projects, experience, and contact information",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteName,
+    template: `%s | ${siteName}`,
+  },
+  description,
+  applicationName: siteName,
+  // General site preview metadata
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName,
+    title: siteName,
+    description,
+    locale: "en_US",
+  },
+  // Twitter preview metadata
+  twitter: {
+    card: "summary",
+    title: siteName,
+    description,
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+};
+
+// Google search result metadata
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteName,
+  url: siteUrl,
 };
 
 export default function RootLayout({
@@ -33,6 +67,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script type="application/ld+json" suppressHydrationWarning>
+          {JSON.stringify(websiteJsonLd)}
+        </script>
         {children}
         <Analytics />
       </body>
