@@ -4,24 +4,24 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="section-block grid gap-15 items-center md:grid-cols-2"
+      className="section-block grid gap-15 items-center md:grid-cols-2 md:mx-10"
     >
       <div className="space-y-4 md:space-y-8 ">
-        <div className="space-y-2 md:space-y-4">
+        <div className="space-y-2">
           <h1 className="text-4xl font-semibold leading-tight text-emerald-50 md:text-6xl">
             Garrett Adams
           </h1>
-          <p className="text-sm md:text-lg uppercase tracking-[0.28em] text-emerald-200/90">
+          <p className="text-sm md:text-xl uppercase tracking-[0.28em] text-emerald-200/90">
             Software Engineer
           </p>
         </div>
 
         <p className="max-w-md text-base leading-8 text-emerald-100/90 md:text-lg">
           Welcome to my portfolio! Connect with me and check out my resume
-          through the links below!
+          through the links below. 
         </p>
 
-        <div className="flex items-center gap-5 text-emerald-100">
+        <div className="flex items-center gap-5 text-emerald-100 ms-1">
           <a
             href="https://github.com/garrettadamsss"
             target="_blank"
@@ -103,7 +103,7 @@ export default function HomeSection() {
         </div>
       </div>
 
-      <div className="flex h-[24rem] justify-center md:h-[27rem] md:w-[30rem] md:justify-self-end">
+      <div className="flex h-[24rem] justify-center md:h-[25rem] md:w-[27rem] md:justify-self-end">
         <SlideDeck />
       </div>
     </section>
