@@ -11,7 +11,7 @@ export default function Main() {
     <div className="min-h-screen text-foreground my-15">
       <Navbar />
       <ScrollReveal />
-      <main className="mx-auto max-w-screen-xl px-5 md:px-35">
+      <main className="mx-auto max-w-screen-xl px-5 md:px-25">
         <HomeSection />
         <AboutSection />
         <ExperienceSection />
