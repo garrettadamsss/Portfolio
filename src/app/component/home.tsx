@@ -103,7 +103,7 @@ export default function HomeSection() {
         </div>
       </div>
 
-      <div className="flex h-[24rem] justify-center md:h-[28rem] md:justify-end">
+      <div className="flex h-[24rem] justify-center md:h-[26rem] md:justify-end">
         <SlideDeck />
       </div>
     </section>

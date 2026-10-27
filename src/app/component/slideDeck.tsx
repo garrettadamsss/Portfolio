@@ -53,8 +53,8 @@ export default function SlideDeck() {
         );
       })}
 
-      <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/80 via-black/55 to-transparent p-3">
-        <ul className="flex items-center justify-center gap-2 pb-2">
+      <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/80 via-black/55 to-transparent">
+        <ul className="flex items-center justify-center gap-3 pb-2">
           {DECK_IMAGES.map((imageSrc, index) => {
             const isActive = index === activeIndex;
 

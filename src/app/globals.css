@@ -59,8 +59,8 @@ body {
 }
 
 @utility section-block {
-  @apply mb-20 scroll-mt-24 md:mb-25;
-}
+  @apply mb-15 scroll-mt-15;
+} 
 
 @utility glass-card {
   @apply rounded-3xl p-8 border border-white/20 bg-white/10 backdrop-blur;
