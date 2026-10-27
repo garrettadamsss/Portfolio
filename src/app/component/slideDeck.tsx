@@ -68,7 +68,7 @@ export default function SlideDeck() {
                     src={imageSrc}
                     alt=""
                     fill
-                    quality={85}
+                    quality={95}
                     className="object-cover rounded-lg"
                   />
                 </button>

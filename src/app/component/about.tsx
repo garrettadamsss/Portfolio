@@ -78,7 +78,7 @@ export default function AboutSection() {
         <p className="mt-4 leading-7 text-emerald-50/90">
           Hello, I&apos;m Garrett. I love to build and learn new things, and
           software engineering is perfectly aligned with that. I&apos;m excited
-          to expand my skill set and start building some projects again. 
+          to expand my skill set and start building some projects again.
         </p>
 
         <div className="mt-8">
@@ -106,9 +106,9 @@ export default function AboutSection() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`cursor-pointer rounded-full border px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] transition ${
                     isActive
-                    ? "border-emerald-200/60 bg-emerald-200/15 text-emerald-50"
-                    : "border-emerald-200/20 text-emerald-200/70 hover:border-emerald-200/40 hover:text-emerald-100"
-                    }`}
+                      ? "border-emerald-200/60 bg-emerald-200/15 text-emerald-50"
+                      : "border-emerald-200/20 text-emerald-200/70 hover:border-emerald-200/40 hover:text-emerald-100"
+                  }`}
                 >
                   {tab.label}
                 </button>
