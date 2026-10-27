@@ -59,7 +59,7 @@ body {
 }
 
 @utility section-block {
-  @apply mb-20;
+  @apply mb-20 scroll-mt-30;
 }
 
 @utility glass-card {
