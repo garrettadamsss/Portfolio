@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://garrettadams.vercel.app";
+const siteUrl = "https://www.garrettadams.io";
 const siteName = "Garrett Adams";
 const description =
   "Portfolio of Garrett Adams including projects, experience, and contact information.";
